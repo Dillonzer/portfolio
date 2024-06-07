@@ -10,12 +10,16 @@ export default function Template({name, techstack, details, img})
                 <p class="projectDetails">{details}</p>
             </div>
             <div class="projectImg">
-            <img 
-                src={img.src}
-                alt={img.name}
-                width={img.width}
-                height={img.height}
-            />                
+            { img.src != null ?
+                <img class="actualImg"
+                    src={img.src}
+                    alt={img.name}
+                    width={img.width}
+                    height={img.height}
+                /> 
+                :
+                <></>       
+            }          
             </div>
         </div>
     );

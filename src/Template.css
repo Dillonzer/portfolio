@@ -34,7 +34,17 @@
     display: block;
 }
 
+.actualImg {
+    border-radius: 10%;
+}
+
 .rounded {  
     padding-bottom: 10px;
     border-bottom: 8px solid #000;
+  }
+
+  @media (max-width: 800px) {
+    img {
+      display: none;
+    }
   }
