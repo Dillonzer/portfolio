@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Image from 'next/image'
+import "@/app/globals.css";
 
 
 type ContentProps = {
@@ -22,7 +23,7 @@ type Img = {
 export default function Content({name, languages, frameworks, exploring, details, img, githubUrl} : ContentProps) {
     return (
         <div className='border-black py-5 border-2 flex hover:bg-green-300 px-3'>
-            <div className="float-left">
+            <div>
                 { githubUrl != null ?  <a href={githubUrl} target='_blank' className="text-4xl hover:text-green-700 text-white">{name}</a> : <p className="text-4xl">{name}</p>}
                 { languages !=  null ? <p>Languages: {languages}</p> : <></> }
                 { frameworks != null ? <p>Frameworks: {frameworks}</p> : <></> }
@@ -30,7 +31,7 @@ export default function Content({name, languages, frameworks, exploring, details
                 <br/>
                 <p>{details}</p>
             </div>
-            <div className="float-right">
+            <div className="float-right pl-10">
             {
                 img.src != "" ?
                 <Image className="rounded-2xl"

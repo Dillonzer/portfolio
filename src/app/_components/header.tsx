@@ -8,7 +8,7 @@ export default function Header() {
             <div className = "text-center text-6xl p-10">
                 <h1>{title}</h1>
             </div>
-            <div className="bg-green-700 overflow-hidden">
+            <div className="bg-green-700 overflow-hidden rounded-lg">
                 <Link href="/" className ="float-left text-center px-6 py-2 bg-green-700 text-white block hover:bg-green-200 hover:text-black">Home</Link>
                 <Link href="/about-me" className ="float-left text-center px-6 py-2 bg-green-700 text-white block hover:bg-green-200 hover:text-black">About Me</Link>
                 <Link href="/personal-api" className ="float-left text-center px-6 py-2 bg-green-700 text-white block hover:bg-green-200 hover:text-black">Personal REST API</Link>
